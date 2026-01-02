@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webspectra.com</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+  <!--Font Awesome icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="queries.css" />
+</head>
+<body>
+
+    <!-- Portfolio Selector Overlay -->
+    <div class="portfolio-overlay" id="portfolioOverlay">
+        <div class="portfolio-switcher">
+            <div class="switch-option active" data-type="website">
+            <i class="fas fa-globe icon"></i>
+            <span>Website</span>
+            </div>
+            <div class="switch-option" data-type="graphics">
+            <i class="fas fa-pen-nib icon"></i>
+            <span>Graphics</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+    <div class="glass-container">
+        <img src="Logo 1.png" alt="Logo" class="logo" />
+        <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        </nav>
+    </div>
+    </header>
+
+    <main class="main-content container">
+        <section class="hero">
+        <h2 class="hero-name">Aman Raj</h2>
+        <h1 class="hero-title">Website Developer</h1>
+        <h3 class="hero-tagline">&lt; Crafting Interfaces That Speak, Code That Performs &gt;</h3>
+        <p class="hero-desc">
+            Designing & Developing <strong>Ultra-modern websites</strong> and UI experiences that turn heads and drive action. I specialize in
+            building digital experiences that seamlessly combine visual storytelling with <strong>High-performance code</strong>. My approach
+            focuses on creating interfaces that don’t just look good — they communicate, guide, and convert. With a deep understanding of
+            <strong>UI/UX principles</strong> and a passion for clean, responsive development, I ensure every project feels intuitive and
+            functions flawlessly, i.e., <strong>Fast, Accessible, and Future-ready</strong>.
+        </p>
+        <a href="#contact" class="cta-btn">Get Started</a>
+        </section>
+    </main>
+
+    <!-- WHAT I DO SECTION -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <p class="section-subtitle">Services Tailored to Elevate Your Online Presence</p>
+
+            <div class="card-grid">
+            <!-- Card 1 -->
+            <div class="glass-card">
+                <i class="fas fa-code card-icon"></i>
+                <h3>Website Development</h3>
+                <p>Developing sleek, fast, SEO-friendly websites using clean HTML, CSS & JavaScript, i.e.,
+                    Pixel-perfect & performance-optimized specially tailored to your needs.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="glass-card">
+                <i class="fas fa-pencil-ruler card-icon"></i>
+                <h3>UI/UX Design</h3>
+                <p>Designing the layouts that are intuitive, modern, and user-centered with storytelling, user flow and interaction oriented design.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="glass-card">
+                <i class="fas fa-rocket card-icon"></i>
+                <h3>Landing Pages</h3>
+                <p>Helping startups craft digital presence with High-converting landing pages that turn visitors into leads.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project SECTION -->
+    <section class="project-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Each crafted with precision, performance, and visual storytelling.</p>
+
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide project-card">
+                <div class="image">
+                    <img src="Project 1.jpg" alt="Project 1" />
+                </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide project-card">
+                <div class="image">
+                    <img src="Project 2.jpg" alt="Project 2" />
+                </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide project-card">
+                <div class="image">
+                    <img src="Project 3.jpg" alt="Project 3" />
+                </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide project-card">
+                <div class="image">
+                    <img src="Project 4.jpg" alt="Project 3" />
+                </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide project-card">
+                <div class="image">
+                    <img src="Project 5.jpg" alt="Project 3" />
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonial-->
+    <section class="testimonial-section" id="testimonials">
+            <div class="container">
+                <div class="testimonial-header">
+                <h2 class="section-title">Testimonials</h2>
+                <p class="section-subtitle">Real words from those I’ve worked with & building trust through Results.</p>
+                </div>
+                    <ul id="cards">
+                        <li class="card" id="card1">
+                            <div class="card-body">
+                                <img src="C1.jpg" alt="Image" class="card-img">
+                                <div class="card-text">
+                                    <p>“Aman delivered beyond expectations. His sense of design and attention to user experience turned our outdated site into a modern, high-performing platform.”</p>
+                                    <h2>Ravi S. — CEO, Dashgro</h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card" id="card2">
+                            <div class="card-body">
+                                <img src="C1.jpg" alt="Image" class="card-img">
+                                <div class="card-text">
+                                    <p>“We were impressed by how quickly Aman understood our brand and translated it into a sleek, responsive website. His UI decisions directly improved our user engagement.”</p>
+                                    <h2>Neha T. — Marketing Head, Elevexa</h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card" id="card3">
+                            <div class="card-body">
+                                <img src="C1.jpg" alt="Image" class="card-img">
+                                <div class="card-text">
+                                    <p>“What sets Aman apart is his balance of creativity and technical skill. Our site doesn’t just look great—it performs fast, ranks well, and keeps users engaged.”</p>
+                                    <h2>Vikram M. — Founder, StudioDeck</h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card" id="card4">
+                            <div class="card-body">
+                                <img src="C1.jpg" alt="Image" class="card-img">
+                                <div class="card-text">
+                                    <p>“Working with Aman was effortless. He communicates clearly, meets deadlines, and creates pixel-perfect layouts that feel alive with interaction.”</p>
+                                    <h2>Simran K. — Product Manager, Nexora</h2>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+    </section>
+
+    <!--Pricing Section-->
+    <section class="pricing-section" id="pricing">
+        <h2 class="section-title">Pricing Plans</h2>
+
+        <div class="pricing-flex">
+            <!-- Basic -->
+                <div class="pricing-card">
+                <h3>Basic</h3>
+
+                <div class="feature-list">
+                    <ul>
+                    <li>Five Page Website</li>
+                    <li>Mobile-first Design</li>                    
+                    <li>Limited layouts (3-4)</li>
+                    <li>Simple SEO</li>
+                    <li>Email Support</li>
+                    </ul>
+                </div>
+
+                <button class="price-btn" data-cta="Activate Now">₹ 7,999</button>
+                </div>
+
+
+            <!-- Standard -->
+                <div class="pricing-card">
+                <h3>Standard</h3>
+
+                <div class="feature-list">
+                    <ul>
+                    <li>Multi Page Website</li>
+                    <li>Responsive Design</li>
+                    <li>Any Layout choice</li>
+                    <li>Social Media integration</li>
+                    <li>Within 1 week Delivery</li>
+                    <li>Email Support</li>
+                    </ul>
+                </div>
+
+                <button class="price-btn" data-cta="Activate Now">₹ 19,999</button>
+                </div>
+
+            <!-- Premium -->
+                <div class="pricing-card">
+                <h3>Premium</h3>
+
+                <div class="feature-list">
+                    <ul>
+                    <li>Multi Page Website</li>
+                    <li>Responsive Design</li>
+                    <li>Animated UI</li>
+                    <li>SEO optimized code</li>
+                    <li>Social Media integration</li>
+                    <li>Advance SEO</li>
+                    <li>Within 10 Days Delivery</li>
+                    <li>Free changes till 15 Days</li>
+                    </ul>
+                </div>
+
+                <button class="price-btn" data-cta="Activate Now">₹ 29,999</button>
+                </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+            <canvas id="cta-particles"></canvas>
+            <div class="cta-glow-bg"></div>
+
+        <div class="cta-content">
+            <h2 class="cta-title">Ready to Build Something Great?</h2>
+            <p class="cta-subtitle">Let’s create a Stunning digital experience together.</p>
+            <button class="cta-button">
+            <span>Connect Now</span>
+            </button>
+        </div>
+    </section>
+
+    <!--FAQ-->
+    <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                <span class="icon">+</span>
+                <p>How long will it take to build my website?</p>
+                </div>
+                <div class="faq-answer">
+                <p>We aim to be realistic and transparent about timing. A simple informational site typically takes 5–8 weeks from kickoff through design, development, and testing, while an e-commerce or complex site can take around 8–12 weeks.
+                    We break the project into clear phases (planning, design concepts, development, review) and will give you an estimated schedule upfront. Throughout the process, we keep you updated on progress and adjust the timeline if your scope changes, so you always know what to expect.</p>
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question">
+                <span class="icon">+</span>
+                <p>What will my website project cost?</p>
+                </div>
+                <div class="faq-answer">
+                <p>Every project is unique, so we provide a custom quote based on your requirements. In general, website costs can vary 
+                    widely – basic sites might start in the low hundreds, while larger or highly customized sites run into the thousands.
+                    Key factors include the number of pages, design complexity, special features (e.g. e-commerce or integrations), and 
+                    whether you need copywriting or graphics. We’ll discuss your needs in detail and then outline everything in a 
+                    transparent proposal, so you know exactly what’s included (and what isn’t) – no surprises or hidden fees.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                <span class="icon">+</span>
+                <p>How many revisions are included?</p>
+                </div>
+                <div class="faq-answer">
+                <p>We value your feedback and build in review rounds to get everything right. Typically, our standard process includes 2–3 
+                    rounds of revisions at key milestones. That means after delivering initial designs or mockups, you’ll have a chance to 
+                    request changes (and we will carefully apply them). This approach strikes a balance: it gives you multiple opportunities 
+                    to refine the site, while keeping the project on schedule. If extra changes are needed beyond the included rounds, 
+                    we’re happy to make them – these are simply handled as agreed extras. We clearly document this revision policy up front 
+                    so there are no misunderstandings, and everything stays on track.</p>
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question">
+                <span class="icon">+</span>
+                <p>What technology or platform will you use for my website?</p>
+                </div>
+                <div class="faq-answer">
+                <p> We choose the tech stack based on what best fits your project and goals. We often work with widely used platforms 
+                    like WordPress (popular for flexible content sites) or e-commerce solutions like Shopify/WooCommerce. For more 
+                    custom applications we might use frameworks such as PHP/Laravel, Node.js, or modern JavaScript front-end libraries 
+                    (React/Vue). As one example, many sites are built on WordPress because it powers nearly half of the web – and it’s
+                     listed among the most popular platforms along with PHP/Laravel, Drupal, Shopify, etc. During our kickoff call we’ll
+                      recommend the best tools for your needs, and of course we’ll explain our choice so you feel confident about the 
+                      technology behind your site.</p>
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question">
+                <span class="icon">+</span>
+                <p> What about support and maintenance after launch?</p>
+                </div>
+                <div class="faq-answer">
+                <p>Launch is just the beginning, and we’ll be there to help afterward. We include an initial period of post-launch support
+                 (e.g. the first 15 days) to fix any unforeseen bugs or minor tweaks. Beyond that, we recommend ongoing maintenance plans. 
+                 Regular updates (to plugins, themes, or the CMS), security patches, backups, and minor enhancements are important – even 
+                 “perfect” sites need checkups. In fact, web development experts advise monthly or quarterly maintenance plans to keep 
+                 sites secure and running smoothly. Our maintenance services typically cover things like bug fixes, performance optimization,
+                  security updates, backups, and small feature updates. This way, you can focus on your business, and we make sure your 
+                  site stays fresh and functional over time.</p>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-top">
+        <!-- Left Side: Logo + Tagline + Split Button -->
+        <div class="footer-left">
+            <div class="footer-brand">
+            <h2 class="footer-logo">Web<span>SPECTRA</span></h2>
+            <p class="footer-tagline">Crafting digital experiences that speak.</p>
+            </div>
+            <div class="footer-split-button">
+            <div class="split-button glassy">
+                <div class="btn-left active">Website</div>
+                <div class="btn-right">Graphics</div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Links, Services, Newsletter, Social -->
+        <div class="footer-right">
+            <!-- Quick Links -->
+            <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">What I Do</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Website Development</a></li>
+                <li><a href="#">UI/UX Design</a></li>
+                <li><a href="#">Landing Pages</a></li>
+                <li><a href="#">Branding Strategy</a></li>
+            </ul>
+            </div>
+
+            <!-- Newsletter + Social -->
+            <div class="footer-column">
+            <h3>Newsletter</h3>
+            <p>Stay updated with my work.</p>
+            <div class="newsletter-box">
+                <input type="email" placeholder="Your Email" />
+                <button type="submit">Send</button>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/9065172394?text=Hi%20Aman%2C%20I'm%20interested%20in%20working%20with%20you!" target="_blank" aria-label="Chat on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+        <p>© 2025 Webspectra. All rights reserved.</p>
+        <div class="footer-legal">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+        </div>
+        </div>
+    </div>
+    </footer>
+
+
+    <!--Portfolio Toggle switch-->
+    <script>
+    const overlay = document.getElementById("portfolioOverlay");
+    const options = document.querySelectorAll(".switch-option");
+    if (localStorage.getItem("portfolioSelected")) {
+        overlay.remove(); // Don’t show overlay again
+    }
+
+    options.forEach(option => {
+        option.addEventListener("click", () => {
+        // Switch active
+        options.forEach(btn => btn.classList.remove("active"));
+        option.classList.add("active");
+
+        const selectedType = option.dataset.type;
+        console.log("Selected:", selectedType);
+
+        // Add delay for animation before removing overlay
+        setTimeout(() => {
+            overlay.classList.add("fade-out");
+
+            setTimeout(() => {
+            overlay.remove();
+            // You can call filtering logic or redirect here if needed
+            // showPortfolio(selectedType);
+            }, 500);
+        }, 300); // Wait before fade-out
+        });
+    });
+    </script>
+
+    <!--JS for Navigation animation-->
+    <script>
+    const nav = document.querySelector('.nav');
+    const bg = document.createElement('div');
+    bg.classList.add('hover-bg');
+    nav.appendChild(bg);
+
+    const links = nav.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+        const rect = link.getBoundingClientRect();
+        const navRect = nav.getBoundingClientRect();
+
+        bg.style.width = `${rect.width}px`;
+        bg.style.height = `${rect.height}px`;
+        bg.style.left = `${rect.left - navRect.left}px`;
+        bg.style.top = `${rect.top - navRect.top}px`;
+        });
+    });
+
+    nav.addEventListener('mouseleave', () => {
+        bg.style.width = `0`;
+    });
+    </script>
+
+    <!-- Projects- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+        },
+        breakpoints: {
+        0: {
+            slidesPerView: 1,
+            centeredSlides: false,
+            },
+        768: {
+            slidesPerView: 2,
+            centeredSlides: true,
+            },
+        1024: {
+            slidesPerView: 3,
+            centeredSlides: true,
+            }
+        }
+    });
+    </script>
+
+    <!--Testimonial stacked card-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const cards = gsap.utils.toArray(".testimonial-card");
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+        trigger: ".testimonial-section",     // Start from heading
+        start: "top top",                     // Trigger immediately when heading reaches top
+        end: "+=" + cards.length * 100 + "%",
+        scrub: true,
+        pin: ".testimonial-stack",            // Pin only the card stack, not heading
+        snap: {
+            snapTo: 1 / (cards.length - 1),
+            duration: 0.3,
+            ease: "power2.inOut"
+        }
+        }
+    });
+
+    cards.forEach((card, index) => {
+        tl.to(card, {
+        opacity: 1,
+        scale: 1,
+        zIndex: index + 2,
+        duration: 0.6,
+        ease: "power2.out"
+        }, "+=0.5");
+    });
+    </script>
+
+    <!--CTA-->
+    <script>
+    const cta = document.querySelector(".cta-content");
+
+    function animateCTAOnScroll() {
+        const rect = cta.getBoundingClientRect();
+        const inView = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+        if (inView) {
+        cta.style.opacity = "1";
+        cta.style.transform = "scale(1)";
+        window.removeEventListener("scroll", animateCTAOnScroll); // run only once
+        }
+    }
+
+    window.addEventListener("scroll", animateCTAOnScroll);
+    // Trigger once in case user lands mid-page
+    window.addEventListener("load", animateCTAOnScroll);
+    </script>
+    
+    <script>
+    const canvas = document.getElementById("cta-particles");
+    const ctx = canvas.getContext("2d");
+    let particles = [];
+
+    function resizeCanvas() {
+    const section = document.querySelector(".cta-section");
+    canvas.width = section.offsetWidth;
+    canvas.height = section.offsetHeight;
+    }
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+
+    function createParticles() {
+    particles = [];
+    for (let i = 0; i < 60; i++) {
+        particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 2 + 1,
+        dx: (Math.random() - 0.5) * 0.6,
+        dy: (Math.random() - 0.5) * 0.6,
+        });
+    }
+    }
+    createParticles();
+
+    function animateParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let p of particles) {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = "#B5E100";
+        ctx.shadowColor = "#B5E100";
+        ctx.shadowBlur = 10;
+        ctx.fill();
+        p.x += p.dx;
+        p.y += p.dy;
+
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+    }
+    requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+    </script>
+
+    <!--FAQs-->
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
+    });
+
+    </script>
+
+    <!--Footer Portfolio toggle button-->
+    <script>
+    const btnLeft = document.querySelector('.btn-left');
+    const btnRight = document.querySelector('.btn-right');
+
+    btnLeft.addEventListener('click', () => {
+        btnLeft.classList.add('active');
+        btnRight.classList.remove('active');
+        // logic to show website projects
+    });
+
+    btnRight.addEventListener('click', () => {
+        btnRight.classList.add('active');
+        btnLeft.classList.remove('active');
+        // logic to show graphics projects
+    });
+    </script>
+
+
+</body>
+</html>
